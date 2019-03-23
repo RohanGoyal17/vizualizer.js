@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+
+</head>
+<body >
+
+<iframe src="123.mp3" allow="autoplay" id="audio" style="display: none;"></iframe>
+
+<audio id="song" controls ="" autoplay="" >
+	<source id="sourceurl" src="https://pagalworld3.org/14666/Photo - Luka Chuppi.mp3" type="audio/mpeg"> 
+		
+</audio>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	var aud = document.getElementById("song");
+	var surl = document.getElementById("sourceurl");
+	var count = 0;
+	
+	var array = ["https://pagalworld3.org/14637/Phir%20Mulaaqat%20-%20Cheat%20India.mp3","https://pagalworld3.org/14662/Ek%20Ladki%20Ko%20Dekha%20Toh%20Aisa%20Laga.mp3","https://pagalworld3.org/14662/Ishq%20Mitha.mp3"];
+
+	aud.onended = function() {
+    surl.src= array[count];
+    aud.load();
+    aud.play();
+    count = count + 1;
+	};
+</script>
+
+
+
+</body>
+</html>
